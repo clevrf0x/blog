@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* override default user agent margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* set default fonts */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  color: teal;
+  text-decoration: none;
+}
+
+/* fonts and colors */
+/* :root {
+} */
+
+.main-title {
+  border-bottom: 1px solid #999;
+  text-align: center;
+  font-size: 48px;
+  padding: 1rem 0;
+}

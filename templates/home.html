@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock styles %}
+
+{% block content %}
+<div class="container">
+  {% for post in post_list %}
+  <div class="post-entry">
+    <h2><a href="{{ post.get_absolute_url }}">{{ post.title | truncatewords:15 }}</a></h2>
+    <p>{{ post.body | truncatewords:45 }}</p>
+  </div>
+  {% endfor %}
+</div>
+{% endblock content %}
